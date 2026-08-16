@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dipakshee Pramanick — UI/UX &amp; Web Designer Portfolio</title>
+  <meta name="description" content="Creative UI/UX Developer & Designer crafting high-converting, strategic, and visually stunning digital products." />
+
+  <!-- Google Fonts: DM Serif Display, Caveat, Alex Brush, Plus Jakarta Sans, Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Material Symbols for Clean Wireframe Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+  <!-- Dedicated Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <nav class="editorial-nav" id="navbar">
+    <div class="nav-pill-container">
+      <a href="#" class="nav-brand">
+        <span class="star-accent">✦</span>
+        <span>Dipakshee Pramanick</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links-desktop">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#work">Selected Work</a></li>
+        <li><a href="#passions">Beyond Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="nav-cta-btn">
+        <span>Get in touch!</span>
+        <span class="star-accent" style="color: var(--color-plum); font-size: 0.9em;">✦</span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Open Navigation">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px;">
+        <span class="nav-brand" style="font-size: 1.15rem;">✦ DIPAKSHEE</span>
+        <button id="mobile-close" style="font-size: 1.5rem; color: var(--color-plum);">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 20px;">
+        <li><a href="#about" class="mobile-link" style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--color-plum);">About me</a></li>
+        <li><a href="#work" class="mobile-link" style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--color-plum);">Selected Work</a></li>
+        <li><a href="#passions" class="mobile-link" style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--color-plum);">Beyond Work</a></li>
+        <li><a href="#resume" class="mobile-link" style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--color-plum);">Resume &amp; Skills</a></li>
+        <li><a href="#contact" class="mobile-link" style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--color-plum);">Get in Touch</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="#contact" class="nav-cta-btn mobile-link" style="width: 100%; justify-content: center; margin-bottom: 12px;">
+        <span>Get in touch! ✦</span>
+      </a>
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; text-align: center; color: var(--text-dark-muted);" data-copy="dipaksheepramanick@gmail.com">dipaksheepramanick@gmail.com</p>
+    </div>
+  </aside>
+
+  <!-- Main Container -->
+  <main class="editorial-wrapper">
+
+    <!-- Hero Section (Poster Layout from Reference 1 & 2) -->
+    <section class="editorial-hero" id="hero">
+      <div class="hero-poster-frame reveal">
+        
+        <!-- Top Eyebrow -->
+        <div class="hero-top-eyebrow">
+          <div class="hero-tagline">
+            <span class="star-accent">✦</span>
+            <span>DESIGNING DIGITAL EXPERIENCES</span>
+          </div>
+          <span class="star-accent" style="font-size: 1.5rem;">✦</span>
+        </div>
+
+        <!-- Composition Grid: Left Typography + Right Arched Portrait -->
+        <div class="hero-composition-grid">
+          
+          <!-- Left Column -->
+          <div class="hero-typography-block">
+            <h1 class="hero-main-title">
+              <span class="word-port">PORT</span>
+              <span class="word-folio">
+                FOL<span class="title-star">✦</span>IO
+              </span>
+            </h1>
+
+            <div class="hero-role-pill-row">
+              <div class="hero-role-pill">
+                <span>UI/UX &amp; WEB DESIGNER</span>
+              </div>
+              <div class="globe-icon-wireframe">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">language</span>
+              </div>
+            </div>
+
+            <p class="hero-script-tagline">
+              Design that connects. Websites that work.
+            </p>
+          </div>
+
+          <!-- Right Column (Arched Designer Showcase) -->
+          <div class="hero-visual-showcase">
+            <div class="hero-arch-frame">
+              <div class="hero-arch-backdrop-plum"></div>
+              <div class="hero-arch-backdrop-salmon"></div>
+              <div class="hero-arch-backdrop-green"></div>
+              <img class="hero-portrait-img" src="assets/hero-portrait.png" alt="Dipakshee Pramanick" />
+            </div>
+
+            <!-- Floating Name Pill on Arch -->
+            <div class="hero-name-pill">
+              <span>DIPAKSHEE PRAMANICK</span>
+              <span class="star-accent gold" style="font-size: 1rem;">✦</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dual Layout Section: About Me + Selected Works (From Reference 1) -->
+    <section class="editorial-dual-section" id="about">
+      <div class="dual-layout-grid">
+        
+        <!-- Left Column: About Me Plum Card + Arched Sunrise Card -->
+        <div class="about-column">
+          
+          <!-- Plum About Card -->
+          <div class="about-plum-card reveal">
+            <h2 class="about-card-title">✦ ABOUT ME</h2>
+            <p class="about-card-body">
+              I'm just starting my journey as a UI/UX designer, driven by curiosity about how people interact with digital products. I love blending simplicity with strategy to create designs that feel intuitive and help brands stand out.
+            </p>
+
+            <div class="about-pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon-box">
+                  <span class="material-symbols-outlined">auto_awesome</span>
+                </div>
+                <span class="pillar-label">STRATEGIC THINKING</span>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon-box">
+                  <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <span class="pillar-label">MODERN AESTHETIC</span>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon-box">
+                  <span class="material-symbols-outlined">favorite</span>
+                </div>
+                <span class="pillar-label">USER FOCUSED</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arched Peach Sunrise Card -->
+          <div class="about-sunrise-card reveal">
+            <div class="sunrise-icon-circle">
+              <span class="material-symbols-outlined">wb_twilight</span>
+            </div>
+            <h3 class="sunrise-title-caps">LET'S BUILD SOMETHING</h3>
+            <span class="sunrise-title-script">Amazing</span>
+            <p class="sunrise-desc">
+              Every project is a chance to create a meaningful digital experience.
+            </p>
+            <div style="margin-top: 18px;">
+              <span class="star-accent" style="font-size: 1.5rem; color: var(--color-forest);">✦</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Selected Works Mini-Browser Showcase -->
+        <div class="works-column reveal" id="work">
+          <div class="works-header-row">
+            <span class="star-accent" style="font-size: 1.4rem;">✦</span>
+            <h2 class="works-header-title">SELECTED WORK</h2>
+            <div class="works-header-line"></div>
+          </div>
+
+          <!-- 2x2 Showcase Grid -->
+          <div class="works-cards-grid">
+            
+            <!-- Card 1: Brand Strategy Studio -->
+            <article class="work-mockup-card" data-project="brand-studio">
+              <div class="work-window-screen">
+                <img class="work-screen-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtzDMkOfmUXjD6glmZZcWxtns9r0L2y6tkxfBVI3mdMFfHEHfVWzh_KIAQoCB0EF2XXkx-vmNaQySpdBgjK3bqNgUP-i31vbG_rypkCVWOFohA7UZhLiNZ0lBcJRb1Yz08XIrBCubpVASZYznTNHGrV6N3EeaoNUGCL8pA6QjdHP65QFrhRQVnhuNV-QEQ67yUbg017pcj5NiGtzvpDhzKmIoLhDchV1kcGMyTO8GgMSuQfAGbZzFY9A" alt="Brand Strategy Studio Project" loading="lazy" />
+              </div>
+              <div class="work-card-info">
+                <h3 class="work-project-name">BRAND STRATEGY STUDIO</h3>
+                <p class="work-project-type">Web Design &amp; Architecture</p>
+              </div>
+            </article>
+
+            <!-- Card 2: E-Commerce Store -->
+            <article class="work-mockup-card" data-project="ecommerce">
+              <div class="work-window-screen">
+                <img class="work-screen-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxeB5O7SSj3lGJW3mmpefLi8rBS4qWJffqk43f06U5vdEl231436oZQiYNjV2HZXtyOjZCSXye-R-GnHSSP7rfUN66OmmiIQyW1nEgwXL5v6Y99ym29hgle8cmdAfjCnTShJw_JMM3kTvPue4-VbvivJydrjkIngoy4ou9Av_6LxBQ6iJYbtxuycklwhK4MZ-0pnQ4TLdMi3L__g0B-OS9zRQc-v8xTwxYO4JpSFqmI_2udQOyQLpJUQ" alt="E-Commerce Store Project" loading="lazy" />
+              </div>
+              <div class="work-card-info">
+                <h3 class="work-project-name">E-COMMERCE STORE</h3>
+                <p class="work-project-type">Web Design &amp; Development</p>
+              </div>
+            </article>
+
+            <!-- Card 3: Interior Design Studio -->
+            <article class="work-mockup-card" data-project="interior">
+              <div class="work-window-screen">
+                <img class="work-screen-img" src="https://lh3.googleusercontent.com/aida/AP1WRLt7v2VFot6YqW_OKWL8YLpCbBnGSwTgMfr9MVjFSy8tVu8dit2AfZW1RLhtFeEHLgnWF1LpPV_3qIbuFVkbpr3L3yvtUxteMI0ncXzuItNi-j-fG9rcfjQmTRfCdsXkyILv5xZrBy_qxhJwRK7ELgNwdlBIEumABdY9zEunnU1vYLGRFPxZKWTApHzoZkmSkHd6Ky0zYrFS-h2bDp0I8cET80VHCsEdDbNasbb5SBQcau-N4rX1upM4N4bZ" alt="Interior Design Studio Project" loading="lazy" />
+              </div>
+              <div class="work-card-info">
+                <h3 class="work-project-name">INTERIOR DESIGN STUDIO</h3>
+                <p class="work-project-type">Interaction &amp; Visual Design</p>
+              </div>
+            </article>
+
+            <!-- Card 4: Fintech Company -->
+            <article class="work-mockup-card" data-project="fintech">
+              <div class="work-window-screen">
+                <img class="work-screen-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBujUWllrtBomUVXTQ4DCstnd-jqvnUNm0Vu8-_hft45f_P_JmXMUILvnXVDbUDzZd7nxoLSJDfcCg57jFiEw9Y9tLFH-SSpWKoQ_D-dC1wd7k-jrCKKW1ARr9IIhL-GLxWByuhwdDM26_2w3wmyxQt2_5sGgqRCIoafe1V7iJhIFXSsq6W_BTjDq6_u5_E5ECXu0i7tmBL3TmgqO567jgV31hAb7Nz143qSf94UWt_8VzjexXTcnwbwA" alt="Fintech Company Project" loading="lazy" />
+              </div>
+              <div class="work-card-info">
+                <h3 class="work-project-name">FINTECH COMPANY</h3>
+                <p class="work-project-type">Web App &amp; Dashboard</p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Automatic Scrolling Photo Gallery ("Beyond the Screen") -->
+    <section class="passions-section" id="passions">
+      <div class="gallery-stream-container reveal">
+        
+        <!-- Minimal Header -->
+        <div class="gallery-stream-header">
+          <div class="gallery-stream-eyebrow">
+            <span class="star-accent">✦</span>
+            <span>VISUAL GALLERY &amp; MOMENTS</span>
+            <span class="star-accent">✦</span>
+          </div>
+          <h2 class="gallery-stream-title">Beyond The Screen</h2>
+          
+          <!-- Interactive Play/Pause & Speed Controls -->
+          <div class="gallery-stream-controls">
+            <button class="gallery-ctrl-pill" id="gallery-pause-btn" aria-label="Pause Auto-Scroll">
+              <span class="material-symbols-outlined" id="gallery-pause-icon">pause</span>
+              <span id="gallery-pause-text">Pause Scroll</span>
+            </button>
+            <button class="gallery-ctrl-pill" id="gallery-speed-btn" aria-label="Toggle Scroll Speed">
+              <span class="material-symbols-outlined">speed</span>
+              <span id="gallery-speed-text">1x Speed</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Infinite Scrolling Stream Wrapper (Single Row) -->
+        <div class="gallery-stream-viewport" id="gallery-stream-viewport">
+          
+          <!-- Single Continuous Left-Scrolling Lane -->
+          <div class="gallery-marquee-track scroll-left" id="gallery-single-lane">
+            <!-- Set A (Photos 0-19) -->
+            <div class="gallery-marquee-item" data-photo-idx="0">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.18.12 PM.jpeg" alt="Album Moment 01" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="1">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.19.05 PM.jpeg" alt="Album Moment 02" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="2">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.20.54 PM.jpeg" alt="Album Moment 03" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="3">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.21.22 PM.jpeg" alt="Album Moment 04" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="4">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM.jpeg" alt="Album Moment 05" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="5">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (1).jpeg" alt="Album Moment 06" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="6">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (2).jpeg" alt="Album Moment 07" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="7">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (3).jpeg" alt="Album Moment 08" loading="lazy" />
+
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="8">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (4).jpeg" alt="Album Moment 09" loading="lazy" />
+
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="9">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (5).jpeg" alt="Album Moment 10" loading="lazy" />
+
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="10">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (6).jpeg" alt="Album Moment 11" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="11">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (7).jpeg" alt="Album Moment 12" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="12">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (8).jpeg" alt="Album Moment 13" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="13">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (9).jpeg" alt="Album Moment 14" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="14">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (10).jpeg" alt="Album Moment 15" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="15">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.52 PM.jpeg" alt="Album Moment 16" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="16">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.52 PM (1).jpeg" alt="Album Moment 17" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="17">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.12.59 PM.jpeg" alt="Album Moment 18" loading="lazy" />
+                <span class="gallery-item-badge">✦ Moment 18</span>
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="18">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.13.00 PM.jpeg" alt="Album Moment 19" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="19">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.14.56 PM.jpeg" alt="Album Moment 20" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Set B (Duplicate for seamless infinite marquee loop) -->
+            <div class="gallery-marquee-item" data-photo-idx="0">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.18.12 PM.jpeg" alt="Album Moment 01" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="1">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.19.05 PM.jpeg" alt="Album Moment 02" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="2">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.20.54 PM.jpeg" alt="Album Moment 03" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="3">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 2.21.22 PM.jpeg" alt="Album Moment 04" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="4">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM.jpeg" alt="Album Moment 05" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="5">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (1).jpeg" alt="Album Moment 06" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="6">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (2).jpeg" alt="Album Moment 07" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="7">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (3).jpeg" alt="Album Moment 08" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="8">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (4).jpeg" alt="Album Moment 09" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="9">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (5).jpeg" alt="Album Moment 10" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="10">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (6).jpeg" alt="Album Moment 11" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="11">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (7).jpeg" alt="Album Moment 12" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="12">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (8).jpeg" alt="Album Moment 13" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="13">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (9).jpeg" alt="Album Moment 14" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="14">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (10).jpeg" alt="Album Moment 15" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="15">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.52 PM.jpeg" alt="Album Moment 16" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="16">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.08.52 PM (1).jpeg" alt="Album Moment 17" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="17">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.12.59 PM.jpeg" alt="Album Moment 18" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="18">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.13.00 PM.jpeg" alt="Album Moment 19" loading="lazy" />
+              </div>
+            </div>
+            <div class="gallery-marquee-item" data-photo-idx="19">
+              <div class="gallery-img-wrapper">
+                <img src="assets/album/WhatsApp Image 2026-08-16 at 8.14.56 PM.jpeg" alt="Album Moment 20" loading="lazy" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Resume, Education & Technical Skills (From Reference 2) -->
+    <section class="resume-section" id="resume">
+      <div class="resume-forest-container reveal">
+        
+        <!-- Left: Education & Experience Timeline -->
+        <div>
+          <h2 class="resume-heading">Education &amp; Skills</h2>
+          
+          <div class="timeline-editorial-list">
+            <!-- Experience 1 -->
+            <div class="timeline-editorial-item">
+              <span class="timeline-star-node">✦</span>
+              <div>
+                <div class="timeline-item-year">2024 - 2026</div>
+                <div class="timeline-item-role">Master's in Computer Application (MCA)</div>
+                <div class="timeline-item-detail">Techno India University</div>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-editorial-item">
+              <span class="timeline-star-node">✦</span>
+              <div>
+                <div class="timeline-item-year">2020 — 2023</div>
+                <div class="timeline-item-role">B.Sc. Honours in Computer Science</div>
+                <div class="timeline-item-detail">Srikrishna College, Kalyani University</div>
+              </div>
+            </div>
+
+            <!-- Education 1 -->
+            <div class="timeline-editorial-item">
+              <span class="timeline-star-node" style="color: var(--color-amber);">✦</span>
+              <div>
+                <div class="timeline-item-year">2017 — 2019</div>
+                <div class="timeline-item-role">Higher Secondary Education (Class XII)</div>
+                <div class="timeline-item-detail">Aranghata Girls High School</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Software Tools & Tech Stack -->
+        <div class="tools-matrix-block">
+          <h3 class="tools-block-title">✦ Software Tools</h3>
+          <div class="tools-grid-icons">
+            <div class="tool-square-badge">Figma</div>
+            <div class="tool-square-badge">Inkscape</div>
+            <div class="tool-square-badge">VsCode</div>
+            <div class="tool-square-badge">AdobeXD</div>
+            <div class="tool-square-badge">Github</div>
+            <div class="tool-square-badge">Claude</div>
+          </div>
+
+          <h3 class="tools-block-title">✦ Core Disciplines</h3>
+          <div class="skills-pill-row">
+            <span class="skill-dark-pill">Web Design</span>
+            <span class="skill-dark-pill">UI/UX</span>
+            <span class="skill-dark-pill">Javascript</span>
+            <span class="skill-dark-pill">React</span>
+            <span class="skill-dark-pill">HTML</span>
+            <span class="skill-dark-pill">CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action & Contact Banner (Terracotta Bar & Rotating Stamp from Reference 1) -->
+    <section class="contact-cta-section" id="contact">
+      <div class="terracotta-contact-box reveal">
+        <div class="contact-cta-grid">
+          
+          <!-- Left: Serif Title -->
+          <div>
+            <h2 class="contact-headline-serif">
+              LET'S CREATE SOMETHING ICONIC <span class="star-accent" style="color: var(--color-forest); font-size: 0.8em;">✦</span>
+            </h2>
+          </div>
+
+          <!-- Middle: Direct Details List -->
+          <div class="contact-details-list">
+            <div class="contact-detail-item" data-copy="dipaksheepramanick@gmail.com" title="Click to copy email">
+              <span class="material-symbols-outlined">mail</span>
+              <span>dipaksheepramanick@gmail.com</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="material-symbols-outlined">commit</span>
+              <span>https://github.com/DIPAKSHEE62</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="material-symbols-outlined">link</span>
+              <span>https://www.linkedin.com/in/dipakshee-pramanickick-956826296</span>
+            </div>
+            <div class="contact-detail-item">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Worldwide • Remote Available</span>
+            </div>
+          </div>
+
+          <!-- Right: Animated Rotating Stamp Badge -->
+          <div class="rotating-stamp-wrapper">
+            <div class="circular-stamp">
+              <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+                <text font-family="'Space Mono', monospace" font-size="9" font-weight="bold" fill="#231623" letter-spacing="2">
+                  <textPath xlink:href="#circlePath">
+                    ✦ THOUGHTFUL DESIGN • STRATEGIC IMPACT •
+                  </textPath>
+                </text>
+              </svg>
+              <div class="stamp-center-star">✦</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="editorial-footer">
+    <div class="editorial-wrapper">
+      <p class="footer-text">
+        THANK YOU FOR VISITING • STUDIO ARCHIVE • © 2026 DIPAKSHEE PRAMANICK
+      </p>
+    </div>
+  </footer>
+
+  <!-- Interactive Project Case Study Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="modal-body" id="modal-content">
+        <!-- Injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Pure Image Lightbox Modal for Gallery -->
+  <div class="modal-backdrop gallery-lightbox-backdrop" id="gallery-lightbox" aria-hidden="true" role="dialog">
+    <div class="gallery-lightbox-container">
+      <button class="gallery-lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+
+      <!-- Nav Arrows -->
+      <button class="gallery-lightbox-arrow prev-arrow" id="lightbox-prev" aria-label="Previous Photo">
+        <span class="material-symbols-outlined">arrow_back_ios_new</span>
+      </button>
+      <button class="gallery-lightbox-arrow next-arrow" id="lightbox-next" aria-label="Next Photo">
+        <span class="material-symbols-outlined">arrow_forward_ios</span>
+      </button>
+
+      <!-- Photo Display Frame -->
+      <div class="gallery-lightbox-img-box">
+        <img id="lightbox-img" src="" alt="Gallery Photo" />
+      </div>
+
+      <!-- Minimal Bottom Caption Pill -->
+      <div class="gallery-lightbox-caption">
+        <span class="gallery-lightbox-pill" id="lightbox-tag">✦ 35mm Film Archive</span>
+        <span class="gallery-lightbox-counter" id="lightbox-counter">01 / 12</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Contact Form Modal -->
+  <div class="modal-backdrop contact-modal-backdrop" id="contact-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card contact-modal-card">
+      <button class="modal-close-btn" id="contact-modal-close" aria-label="Close Contact Modal">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+
+      <!-- Form View Container -->
+      <div class="contact-modal-body" id="contact-form-container">
+        <div class="contact-modal-header">
+          <div class="contact-modal-eyebrow">
+            <span class="star-accent">✦</span>
+            <span>LET'S CONNECT</span>
+            <span class="star-accent">✦</span>
+          </div>
+          <h2 class="contact-modal-title">Get in Touch</h2>
+          <p class="contact-modal-subtitle">
+            Have a project in mind, opportunities, or just want to say hi? Drop a message below and it will reach my inbox directly.
+          </p>
+        </div>
+
+        <form class="editorial-contact-form" id="contact-form">
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">YOUR NAME *</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Elena Rostova" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">YOUR EMAIL *</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. elena@studio.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject" class="form-label">SUBJECT / PROJECT SCOPE</label>
+            <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Website Redesign / UI-UX Collaboration" />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">YOUR MESSAGE *</label>
+            <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your project, goals, or idea..." required></textarea>
+          </div>
+
+          <div class="form-footer-action">
+            <button type="submit" class="contact-submit-btn" id="contact-submit-btn">
+              <span class="btn-text" id="btn-submit-text">Send Message</span>
+              <span class="material-symbols-outlined btn-icon" id="btn-submit-icon">send</span>
+            </button>
+            <span class="form-privacy-note">✦ Directly sent to dipaksheepramanick@gmail.com</span>
+          </div>
+        </form>
+      </div>
+
+      <!-- Animated Success Confirmation View (Hidden Initially) -->
+      <div class="contact-success-state" id="contact-success-state" style="display: none;">
+        <div class="success-icon-animation">
+          <div class="success-ring"></div>
+          <span class="material-symbols-outlined success-check">check_circle</span>
+          <div class="sparkle-particle p1">✦</div>
+          <div class="sparkle-particle p2">✦</div>
+          <div class="sparkle-particle p3">✦</div>
+          <div class="sparkle-particle p4">✦</div>
+        </div>
+
+        <h3 class="success-title">Message Delivered!</h3>
+        <p class="success-desc">
+          Thank you for reaching out! Your message was transmitted directly to <strong>dipaksheepramanick@gmail.com</strong>. I'll get back to you promptly.
+        </p>
+
+        <button type="button" class="success-done-btn" id="contact-success-close">
+          <span>Back to Portfolio</span>
+          <span class="star-accent">✦</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="editorial-toast" id="toast"></div>
+
+  <!-- Dedicated JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
+</html>
