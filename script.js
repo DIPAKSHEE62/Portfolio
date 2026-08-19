@@ -110,45 +110,68 @@ function initScrollReveals() {
    4. Interactive Case Study Modal
    -------------------------------------------------------------------------- */
 const CASE_STUDIES = {
-  'brand-studio': {
-    title: 'Brand Strategy Studio',
-    category: 'BRAND IDENTITY & WEB ARCHITECTURE',
+  'ai-chatbot': {
+    title: 'AIBUDDY — Intelligent AI Assistant',
+    subtitle: 'Designing a cross-platform conversational interface for AI interactions',
+    category: 'UI/UX DESIGN · MOBILE APP · FLUTTER & FIREBASE',
     year: '2024',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBtzDMkOfmUXjD6glmZZcWxtns9r0L2y6tkxfBVI3mdMFfHEHfVWzh_KIAQoCB0EF2XXkx-vmNaQySpdBgjK3bqNgUP-i31vbG_rypkCVWOFohA7UZhLiNZ0lBcJRb1Yz08XIrBCubpVASZYznTNHGrV6N3EeaoNUGCL8pA6QjdHP65QFrhRQVnhuNV-QEQ67yUbg017pcj5NiGtzvpDhzKmIoLhDchV1kcGMyTO8GgMSuQfAGbZzFY9A',
-    description: 'A bespoke digital identity and portfolio system created for an international design consultancy. Designed with rich typography, modular grid systems, and subtle interactive page transitions that reinforce the agency\'s premium positioning.',
-    deliverables: ['Custom Webflow & React Build', 'Editorial Typography System', 'Interactive Case Study Templates', 'Micro-Interactions'],
-    impact: ['+120% Increase in qualified leads', 'Featured on Awwwards Site of the Day', '<0.6s Average Page Load'],
-    tools: ['Figma', 'React', 'Tailwind CSS', 'Framer Motion']
+    image: 'assets/aibuddy.png',
+    description: 'AIBUDDY is a mobile-first cross-platform conversational assistant built using Flutter and integrated with the OpenAI API model. The architecture leverages Firebase for real-time Firestore chat persistence and authentication, eliminating the need for a dedicated backend server while ensuring low-latency communication, offline sync, and graceful error handling.',
+    problemStatement: 'Designing a mobile-first AI experience requires solving unique constraints: compact mobile viewports, multi-turn history switching, dynamic thinking/streaming indicators, seamless code copying on touch devices, and resilient error recovery during mobile network switches without backend dependencies.',
+    targetUsers: ['Students & Researchers', 'Software Engineers & Developers', 'Productivity Professionals', 'Mobile AI Users'],
+    features: [
+      'Mobile-first Flutter interface with timestamped message bubbles & 1-tap response copying',
+      'Serverless Firebase Firestore real-time sync for persistent multi-conversation history',
+      'Dynamic AI interaction states (Thinking / Streaming / Stop Generation / Regenerate)',
+      'Robust error handling matrix (Network switches, API timeouts, Rate-limits, Empty prompts)',
+      'Syntax-highlighted code blocks with copy-code trigger & horizontal mobile scrolling'
+    ],
+    deliverables: [
+      'Interactive Figma Mobile Prototype (10 Key Chat States & Navigation)',
+      'Flutter Conversational Flow & Mobile Information Architecture',
+      'Mobile Component Library & Design Tokens (Inputs, Bubbles, Code Blocks)',
+      'Edge-Case Matrix (Error, Empty, Loading & Thinking States)',
+      'Firebase Realtime Integration Specs & Usability Testing'
+    ],
+    impact: [
+      'Lightweight serverless Firebase architecture with zero-latency visual feedback',
+      'Fluid cross-platform mobile conversational experience crafted in Flutter',
+      'Developer-optimized technical formatting with touch-friendly syntax highlighting'
+    ],
+    uxFlow: ['Open App', 'Chat Dashboard', 'New Conversation', 'Prompt Input', 'AI Processing', 'Contextual Response', 'Firestore Auto-Sync'],
+    tools: ['Figma', 'FigJam', 'Flutter', 'Dart', 'Firebase', 'Firestore', 'OpenAI API']
   },
-  'ecommerce': {
-    title: 'Timeless Styles Store',
-    category: 'E-COMMERCE & DESIGN SYSTEM',
+  'engineers-way': {
+    title: 'Engineer\'s Way — Community Platform',
+    subtitle: 'Unifying mentorship, technical discussions, and career growth into an integrated ecosystem',
+    category: 'UI/UX DESIGN · ENGINEERING COMMUNITY · WEB APPLICATION',
     year: '2024',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCxeB5O7SSj3lGJW3mmpefLi8rBS4qWJffqk43f06U5vdEl231436oZQiYNjV2HZXtyOjZCSXye-R-GnHSSP7rfUN66OmmiIQyW1nEgwXL5v6Y99ym29hgle8cmdAfjCnTShJw_JMM3kTvPue4-VbvivJydrjkIngoy4ou9Av_6LxBQ6iJYbtxuycklwhK4MZ-0pnQ4TLdMi3L__g0B-OS9zRQc-v8xTwxYO4JpSFqmI_2udQOyQLpJUQ',
-    description: 'High-conversion minimalist digital boutique tailored for luxury apparel. Integrated with custom filter facets, fluid cart drawers, and frictionless one-click checkout flows.',
-    deliverables: ['Headless Shopify Storefront', 'Fluid Cart Animation Tokens', 'Responsive Product Detail Pages', 'Design Token Library'],
-    impact: ['+38% Checkout Conversion Rate', '50k+ Monthly Active Shoppers', '99.4% Uptime'],
-    tools: ['Next.js', 'Shopify API', 'TypeScript', 'Tailwind CSS']
-  },
-  'interior': {
-    title: 'Reimagine Your Space',
-    category: 'INTERIOR DESIGN & VISUAL SHOWCASE',
-    year: '2023',
-    image: 'https://lh3.googleusercontent.com/aida/AP1WRLt7v2VFot6YqW_OKWL8YLpCbBnGSwTgMfr9MVjFSy8tVu8dit2AfZW1RLhtFeEHLgnWF1LpPV_3qIbuFVkbpr3L3yvtUxteMI0ncXzuItNi-j-fG9rcfjQmTRfCdsXkyILv5xZrBy_qxhJwRK7ELgNwdlBIEumABdY9zEunnU1vYLGRFPxZKWTApHzoZkmSkHd6Ky0zYrFS-h2bDp0I8cET80VHCsEdDbNasbb5SBQcau-N4rX1upM4N4bZ',
-    description: 'An immersive editorial portfolio for an architecture & interior design atelier. Features full-bleed parallax imagery, interactive 3D floorplan tours, and warm terracotta aesthetics.',
-    deliverables: ['Custom Architectural Layouts', 'Interactive Before/After Sliders', 'High-Res Project Lightbox', 'SEO Optimization'],
-    impact: ['Top 3 Google Search Ranking for target keywords', 'Client booking calendar filled 6 months out'],
-    tools: ['Figma', 'JavaScript', 'Modern CSS', 'GSAP']
-  },
-  'fintech': {
-    title: 'Finances Made Simple',
-    category: 'FINTECH APP & DATA DASHBOARD',
-    year: '2023',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBujUWllrtBomUVXTQ4DCstnd-jqvnUNm0Vu8-_hft45f_P_JmXMUILvnXVDbUDzZd7nxoLSJDfcCg57jFiEw9Y9tLFH-SSpWKoQ_D-dC1wd7k-jrCKKW1ARr9IIhL-GLxWByuhwdDM26_2w3wmyxQt2_5sGgqRCIoafe1V7iJhIFXSsq6W_BTjDq6_u5_E5ECXu0i7tmBL3TmgqO567jgV31hAb7Nz143qSf94UWt_8VzjexXTcnwbwA',
-    description: 'Next-generation quantitative wealth management application with real-time biometric analytics, predictive budgeting graphs, and accessible contrast palettes.',
-    deliverables: ['Data Visualization Components', 'Responsive Mobile Application', 'Design System Documentation', 'Dark/Light Matrix'],
-    impact: ['4.9/5 Star User Rating', 'Over $120M in Assets Monitored', 'Zero latency on chart redraws'],
-    tools: ['React Native', 'TypeScript', 'D3.js', 'Figma']
+    image: 'assets/engineersWay.png',
+    description: 'Engineer\'s Way is a unified community platform designed to connect engineering students, experienced professionals, mentors, and industry practitioners in one structured environment. The platform helps students learn from experienced engineers, discover career opportunities, share technical knowledge, showcase projects, and build professional connections.',
+    problemStatement: 'Engineering students currently use multiple disconnected platforms for learning (YouTube), discussions (Reddit), networking (LinkedIn), coding (GitHub), and job searches. This creates fragmented experiences. Engineer\'s Way brings all these activities into a single, focused ecosystem.',
+    targetUsers: ['Engineering Students', 'Senior Industry Engineers & Mentors', 'Tech Recruiters & Companies', 'Community Administrators'],
+    features: [
+      'Community Feed with category facets (Web, Mobile, AI/ML, DevOps, UI/UX, Cloud, Career)',
+      'Verified Engineer Profiles (Skills Matrix, GitHub/LinkedIn sync, Project tree, Experience)',
+      'Mentor Discovery Engine filtered by technology, years of experience, and availability',
+      'Structured Peer Resume Review & actionable feedback submission workflow',
+      'Project Showcase with live demos, repository links, screenshots & community feedback',
+      'Global Multi-Entity Search across People, Projects, Posts, and Opportunities'
+    ],
+    deliverables: [
+      'Multi-Role Information Architecture (Community + People + Projects + Career)',
+      '15+ High-Fidelity UI Screens & Interactive Figma Prototype',
+      'Multi-Persona User Journeys (Mentorship Request, Project Showcase, Resume Review)',
+      'Design System with Modular UI Components & Accessible Color Matrix',
+      'Usability Testing & Navigation Discovery Optimization'
+    ],
+    impact: [
+      'Consolidated 6 fragmented developer touchpoints into 1 cohesive ecosystem',
+      'Designed structured 4-step mentorship & resume review feedback workflows',
+      'Built multi-persona navigation tailored for Students, Mentors & Recruiters'
+    ],
+    uxFlow: ['Explore Feed', 'Filter Category', 'Discover Mentor', 'Review Profile', 'Request Mentorship / Resume Review'],
+    tools: ['Figma', 'FigJam', 'React', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Node.js', 'Express.js', 'PostgreSQL / Supabase']
   }
 };
 
@@ -167,38 +190,67 @@ function initProjectModals() {
     modalContent.innerHTML = `
       <div style="margin-bottom: 20px;">
         <span style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-terracotta); font-weight: 700;">✦ ${data.category} (${data.year})</span>
-        <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-plum); margin: 8px 0 16px 0;">${data.title}</h2>
+        <h2 style="font-family: var(--font-serif); font-size: clamp(1.8rem, 4vw, 2.4rem); color: var(--color-plum); margin: 8px 0 6px 0; line-height: 1.2;">${data.title}</h2>
+        <p style="font-family: var(--font-sans); font-size: 0.95rem; color: var(--color-forest); font-weight: 600; margin-bottom: 16px;">${data.subtitle}</p>
       </div>
 
       <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px; border: 1px solid rgba(35,22,35,0.12); background: var(--color-plum-dark);">
-        <img src="${data.image}" alt="${data.title}" style="width: 100%; height: auto; max-height: 400px; object-fit: cover;" />
+        <img src="${data.image}" alt="${data.title}" style="width: 100%; height: auto; max-height: 380px; object-fit: cover; display: block;" />
       </div>
 
+      <!-- Problem Statement & Solution -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px;">
+        <div style="background: rgba(222, 124, 100, 0.08); padding: 18px; border-radius: var(--radius-md); border-left: 4px solid var(--color-terracotta);">
+          <h3 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-terracotta); font-weight: 700; margin-bottom: 8px;">✦ The Challenge &amp; Problem</h3>
+          <p style="font-size: 0.9rem; color: var(--text-dark); line-height: 1.6;">${data.problemStatement}</p>
+        </div>
+        <div style="background: rgba(67, 83, 52, 0.08); padding: 18px; border-radius: var(--radius-md); border-left: 4px solid var(--color-forest);">
+          <h3 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-forest); font-weight: 700; margin-bottom: 8px;">✦ Project Overview &amp; Solution</h3>
+          <p style="font-size: 0.9rem; color: var(--text-dark); line-height: 1.6;">${data.description}</p>
+        </div>
+      </div>
+
+      <!-- Core Features -->
+      <div style="background: var(--bg-cream-alt); padding: 20px; border-radius: var(--radius-md); border: 1px solid rgba(35,22,35,0.08); margin-bottom: 24px;">
+        <h3 style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-plum); font-weight: 700; margin-bottom: 12px;">✦ Key Features &amp; UX Decisions</h3>
+        <ul style="list-style: none; font-size: 0.88rem; color: var(--text-dark-muted); display: flex; flex-direction: column; gap: 8px;">
+          ${data.features.map(f => `<li style="display: flex; align-items: flex-start; gap: 8px;"><span style="color: var(--color-terracotta); font-weight: bold;">✦</span><span>${f}</span></li>`).join('')}
+        </ul>
+      </div>
+
+      <!-- UX Flow Pathway -->
       <div style="margin-bottom: 24px;">
-        <h3 style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-plum); font-weight: 700; margin-bottom: 8px;">Project Scope &amp; Solution</h3>
-        <p style="font-size: 1rem; color: var(--text-dark-muted); line-height: 1.7;">${data.description}</p>
+        <h3 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-plum); font-weight: 700; margin-bottom: 10px;">✦ Main User Flow</h3>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">
+          ${data.uxFlow.map((step, index) => `
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; background: var(--color-plum); color: var(--text-light); padding: 5px 12px; border-radius: var(--radius-pill); font-weight: 600;">${step}</span>
+            ${index < data.uxFlow.length - 1 ? `<span style="color: var(--color-terracotta); font-size: 0.9rem;">→</span>` : ''}
+          `).join('')}
+        </div>
       </div>
 
+      <!-- Deliverables & Impact -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px;">
         <div style="background: var(--bg-cream-alt); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(35,22,35,0.08);">
-          <h4 style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-forest); font-weight: 700; margin-bottom: 8px;">Deliverables</h4>
-          <ul style="list-style: none; font-size: 0.88rem; color: var(--text-dark-muted); display: flex; flex-direction: column; gap: 6px;">
-            ${data.deliverables.map(d => `<li>✦ ${d}</li>`).join('')}
+          <h4 style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-forest); font-weight: 700; margin-bottom: 10px;">UX &amp; Design Deliverables</h4>
+          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-dark-muted); display: flex; flex-direction: column; gap: 6px;">
+            ${data.deliverables.map(d => `<li style="display: flex; gap: 6px;"><span style="color: var(--color-forest);">✓</span><span>${d}</span></li>`).join('')}
           </ul>
         </div>
 
         <div style="background: var(--bg-cream-alt); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(35,22,35,0.08);">
-          <h4 style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-terracotta); font-weight: 700; margin-bottom: 8px;">Proven Impact</h4>
-          <ul style="list-style: none; font-size: 0.88rem; color: var(--text-dark-muted); display: flex; flex-direction: column; gap: 6px;">
-            ${data.impact.map(m => `<li>✓ ${m}</li>`).join('')}
+          <h4 style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-terracotta); font-weight: 700; margin-bottom: 10px;">Proven Impact &amp; Architecture</h4>
+          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-dark-muted); display: flex; flex-direction: column; gap: 6px;">
+            ${data.impact.map(m => `<li style="display: flex; gap: 6px;"><span style="color: var(--color-terracotta);">✦</span><span>${m}</span></li>`).join('')}
           </ul>
         </div>
       </div>
 
+      <!-- Tech & Design Stack -->
       <div>
-        <h4 style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-plum); font-weight: 700; margin-bottom: 10px;">Tech &amp; Design Stack</h4>
+        <h4 style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-plum); font-weight: 700; margin-bottom: 10px;">Tools &amp; Tech Stack</h4>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          ${data.tools.map(t => `<span style="font-family: var(--font-mono); font-size: 0.75rem; background: var(--color-plum); color: var(--text-light); padding: 5px 12px; border-radius: var(--radius-pill);">${t}</span>`).join('')}
+          ${data.tools.map(t => `<span style="font-family: var(--font-mono); font-size: 0.75rem; background: rgba(35,22,35,0.08); color: var(--color-plum); padding: 5px 12px; border-radius: var(--radius-pill); font-weight: 600; border: 1px solid rgba(35,22,35,0.12);">${t}</span>`).join('')}
         </div>
       </div>
     `;
@@ -296,7 +348,6 @@ const GALLERY_PHOTOS = [
   { src: 'assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (6).jpeg', tag: '✦ Moment 11' },
   { src: 'assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (7).jpeg', tag: '✦ Moment 12' },
   { src: 'assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (8).jpeg', tag: '✦ Moment 13' },
-  { src: 'assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (9).jpeg', tag: '✦ Moment 14' },
   { src: 'assets/album/WhatsApp Image 2026-08-16 at 8.08.50 PM (10).jpeg', tag: '✦ Moment 15' },
   { src: 'assets/album/WhatsApp Image 2026-08-16 at 8.08.52 PM.jpeg', tag: '✦ Moment 16' },
   { src: 'assets/album/WhatsApp Image 2026-08-16 at 8.08.52 PM (1).jpeg', tag: '✦ Moment 17' },
